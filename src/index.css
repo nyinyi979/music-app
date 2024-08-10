@@ -10,17 +10,17 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
-.song{
+.song {
   width: 100%;
-  display: flex; 
-  gap: 1rem; 
-  align-items: center; 
-  transition-duration: 300ms; 
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition-duration: 300ms;
   font-size: 10px;
 }
 .song:hover {
-  background-color: #F3F4F6; 
-  }
+  background-color: #f3f4f6;
+}
 .song .song-hover div {
   display: none;
 }
@@ -28,6 +28,6 @@ body {
   display: block;
 }
 
-.ml-auto{
+.ml-auto {
   margin-left: auto;
 }

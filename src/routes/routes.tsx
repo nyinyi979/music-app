@@ -15,12 +15,12 @@ const Routes = () => {
         },
         {
           path: "/songs/:id",
-          element: <Songs />
+          element: <Songs />,
         },
         {
           path: "/playlists",
-          element: <PlaylistsPage />
-        }
+          element: <PlaylistsPage />,
+        },
       ],
     },
   ];

@@ -1,60 +1,60 @@
-.recommend-container{
-    display: flex; 
-overflow-x: auto; 
-flex-direction: column; 
-gap: 1rem; 
-width: 100%; 
+.recommend-container {
+  display: flex;
+  overflow-x: auto;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
 }
-.recommend-container .h{
-    font-weight: bold;
-    font-size: 18px;
+.recommend-container .h {
+  font-weight: bold;
+  font-size: 18px;
 }
-.recommend{
-    display: flex;
-    gap: 24px;
-    overflow-x: auto;
+.recommend {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
 }
-.recommend .loader{
-    width: 100%;
-    height: 200px;
-    background-color: #F3F4F6; 
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+.recommend .loader {
+  width: 100%;
+  height: 200px;
+  background-color: #f3f4f6;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
-.recommend .song{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.recommend .song {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-.recommend .song-hover{
-    width: 150px;
-    height: 150px;
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
+.recommend .song-hover {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.recommend .song-hover .play{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.755);
+.recommend .song-hover .play {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.755);
 }
-.recommend .song-hover .play div{
-    width: 80px;
-    height: 80px;
-    margin: 20% auto;
+.recommend .song-hover .play div {
+  width: 80px;
+  height: 80px;
+  margin: 20% auto;
 }
-.recommend .track-info{
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
+.recommend .track-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
-.recommend .track-info .track{
-    font-weight: normal;
-    font-size: 14px;
+.recommend .track-info .track {
+  font-weight: normal;
+  font-size: 14px;
 }
-.recommend .track-info .artist{
-    font-weight: lighter;
-    font-size: 12px;
+.recommend .track-info .artist {
+  font-weight: lighter;
+  font-size: 12px;
 }

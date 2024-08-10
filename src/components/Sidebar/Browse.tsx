@@ -42,27 +42,23 @@ export default function Browse() {
   ];
 
   return (
-      <div className="browse-container">
-        <p>BROWSE</p>
-        {links.map((li) => {
-          const active = li.url === location.pathname;
-          return (
-            <a
-              key={li.url}
-              href={li.url}
-              className={`link ${
-                active
-                  ? "active-link"
-                  : "n-active-link"
-              }`}
-            >
-              <span className="size-5">
-                <img src={active ? li.fillIcon : li.icon} />
-              </span>
-              <span>{li.value}</span>
-            </a>
-          );
-        })}
-      </div>
+    <div className="browse-container">
+      <p>BROWSE</p>
+      {links.map((li) => {
+        const active = li.url === location.pathname;
+        return (
+          <a
+            key={li.url}
+            href={li.url}
+            className={`link ${active ? "active-link" : "n-active-link"}`}
+          >
+            <span className="size-5">
+              <img src={active ? li.fillIcon : li.icon} />
+            </span>
+            <span>{li.value}</span>
+          </a>
+        );
+      })}
+    </div>
   );
 }

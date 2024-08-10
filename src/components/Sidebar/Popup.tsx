@@ -1,8 +1,17 @@
 import { motion } from "framer-motion";
 import { Switch } from "../input/Switch";
 import { useUserStore } from "../../store/useUserData";
-export default function Popup(){
-  const {privateAccess, premiumRemaining, explicit, friend, setExplicit, setFriend, setPrivateAccess, logout} = useUserStore((state)=>state)
+export default function Popup() {
+  const {
+    privateAccess,
+    premiumRemaining,
+    explicit,
+    friend,
+    setExplicit,
+    setFriend,
+    setPrivateAccess,
+    logout,
+  } = useUserStore((state) => state);
   return (
     <motion.div
       initial={{ opacity: 0, translateY: 20 }}
@@ -39,7 +48,9 @@ export default function Popup(){
         />
       </div>
       <p>Account Settings</p>
-      <button onClick={logout} className="ml-auto text-gray-300">Log out</button>
+      <button onClick={logout} className="ml-auto text-gray-300">
+        Log out
+      </button>
     </motion.div>
   );
 }

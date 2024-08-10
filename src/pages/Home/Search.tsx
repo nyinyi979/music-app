@@ -1,6 +1,6 @@
 import React from "react";
 import Noti from "../../svg/noti.svg";
-import "./Search.css"
+import "./Search.css";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function Search() {

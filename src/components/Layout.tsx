@@ -1,6 +1,6 @@
 import Player from "./Player";
 import Sidebar from "./Sidebar";
-import "./Sidebar.css"
+import "./Sidebar.css";
 import { Outlet } from "react-router-dom";
 
 export default function Layout() {

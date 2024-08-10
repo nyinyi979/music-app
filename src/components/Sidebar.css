@@ -1,55 +1,55 @@
 .sidebar {
-    display: flex;
-    overflow-y: auto;
-    position: sticky;
-    top: 0;
-    left: 0;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-    flex-direction: column;
-    gap: 2.5rem;
-    background-image: linear-gradient(to bottom, white, rgb(230, 255, 255));
-    background-color: #f3f4f6;
-    width: 360px;
-    height: 100vh;
-  }
-.user-container{
+  display: flex;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  flex-direction: column;
+  gap: 2.5rem;
+  background-image: linear-gradient(to bottom, white, rgb(230, 255, 255));
+  background-color: #f3f4f6;
+  width: 360px;
+  height: 100vh;
+}
+.user-container {
   display: flex;
   width: fit-content;
   gap: 16px;
 }
-.user-container > img{
+.user-container > img {
   width: 48px;
   height: 48px;
   border-radius: 100%;
   background-color: black;
 }
-.user{
+.user {
   display: flex;
   flex-direction: column;
   gap: 2px;
   position: relative;
 }
-.user button{
+.user button {
   font-weight: 600;
   user-select: none;
 }
-.user .arr{
+.user .arr {
   position: absolute;
   right: -20px;
-  top: 4px
+  top: 4px;
 }
 .layout {
-    position: relative;
-    background-image: linear-gradient(to bottom right, #f472b6, #db2777);
-    background-color: #f472b6;
-    background-color: #db2777;
-  }
-  .layout-container {
-    display: flex;
-    overflow-y: auto;
-    box-shadow: 0 10px 40px 2px #0000003e;
-    border-radius: 0 0 32px 32px;
-  }
+  position: relative;
+  background-image: linear-gradient(to bottom right, #f472b6, #db2777);
+  background-color: #f472b6;
+  background-color: #db2777;
+}
+.layout-container {
+  display: flex;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px 2px #0000003e;
+  border-radius: 0 0 32px 32px;
+}

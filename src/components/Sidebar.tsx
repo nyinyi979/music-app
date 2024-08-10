@@ -2,23 +2,21 @@ import React from "react";
 import Popup from "./Sidebar/Popup";
 import Browse from "./Sidebar/Browse";
 import YourPlaylists from "./Sidebar/Playlist";
-import "./Sidebar.css"
+import "./Sidebar.css";
 import { AnimatePresence, motion } from "framer-motion";
 import { useUserStore } from "../store/useUserData";
 
 export default function Sidebar() {
   const [open, setOpen] = React.useState(false);
   const toggle = () => setOpen(!open);
-  const {tier, username} = useUserStore((state)=>state)
+  const { tier, username } = useUserStore((state) => state);
 
   return (
     <div className="sidebar">
       <div className="user-container">
         <img />
         <div className="user">
-          <button onClick={toggle}>
-            {username}
-          </button>
+          <button onClick={toggle}>{username}</button>
           <p className="w-fit p-0.5 border border-gray-300 font-bold text-[10px] text-gray-300">
             {tier}
           </p>
@@ -40,12 +38,7 @@ export default function Sidebar() {
               />
             </svg>
           </motion.p>
-          <AnimatePresence>
-            {open && (
-              <Popup
-              />
-            )}
-          </AnimatePresence>
+          <AnimatePresence>{open && <Popup />}</AnimatePresence>
         </div>
       </div>
       <Browse />
