@@ -1,0 +1,63 @@
+.recent-container {
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  height: fit-content;
+  color: #000000;
+  padding: 0 0 0 30px;
+}
+.recent-container > p {
+  font-weight: 700;
+  font-size: 18px;
+}
+.recents {
+  width: 100%;
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 200px;
+}
+.recents .loader {
+  width: 100%;
+  height: 5rem;
+  background-color: #f3f4f6;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.recents .song-hover {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.recents .play {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.556);
+}
+.recents .track-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.track-info .track {
+  overflow: hidden;
+  width: 6rem;
+  font-weight: 700;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+.track-info .artist {
+  overflow: hidden;
+  width: 4rem;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+.track-info img{
+  width: 12px;
+  height: 12px;
+}

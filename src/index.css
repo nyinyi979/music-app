@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.song{
+  width: 100%;
+  display: flex; 
+  gap: 1rem; 
+  align-items: center; 
+  transition-duration: 300ms; 
+  font-size: 10px;
+}
+.song:hover {
+  background-color: #F3F4F6; 
+  }
+.song .song-hover div {
+  display: none;
+}
+.song:hover .song-hover div {
+  display: block;
+}
+
+.ml-auto{
+  margin-left: auto;
+}
