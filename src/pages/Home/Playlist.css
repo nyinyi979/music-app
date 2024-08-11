@@ -1,5 +1,6 @@
 .playlists-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   overflow-x: auto;
   padding-top: 1.25rem;
   padding-bottom: 2.5rem;
