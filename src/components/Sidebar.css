@@ -1,6 +1,7 @@
 .sidebar {
   display: flex;
   overflow-y: auto;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
@@ -17,6 +18,8 @@
 }
 .user-container {
   display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   gap: 16px;
 }
@@ -34,7 +37,10 @@
 }
 .user button {
   font-weight: 600;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .user .arr {
   position: absolute;

@@ -58,11 +58,11 @@ export default function Search() {
       </div>
       <button
         onClick={() => setNoti(!noti)}
-        className="w-fit relative ml-auto p-2 rounded-xl hover:bg-gray-50 duration-300"
+        className="noti-btn"
       >
-        <img src={Noti} alt="notification" className="size-6" />
+        <img src={Noti} alt="notification" />
         <AnimatePresence>{noti && <NotiPopup />}</AnimatePresence>
-        <span className="size-3 flex absolute right-2 top-1 pl-1 pt-[1px] rounded-full bg-red-500 text-[7px] text-white">
+        <span className="noti-count">
           1
         </span>
       </button>
@@ -83,18 +83,18 @@ const NotiPopup = () => {
       initial={{ opacity: 0, translateY: 20 }}
       animate={{ opacity: 1, translateY: 0 }}
       exit={{ opacity: 0, translateY: 20 }}
-      className="w-[280px] h-fit absolute -right-0 top-10 flex flex-col gap-3 overflow-y-auto rounded-lg overflow-hidden bg-white border-[1px] border-gray-100  text-[10px] z-[20] shadow-popup"
+      className="noti-popup"
     >
       {notifications.map((noti, index) => (
         <button
           key={noti.noti + index}
-          className="flex gap-3 items-center p-2 hover:bg-gray-100 duration-300"
+          className="noti"
         >
-          <img className="size-8 rounded-full bg-black" />
-          <p className="w-[150px] overflow-hidden text-left">
-            {noti.noti} <span className="font-bold">{noti.item}</span>
+          <img />
+          <p>
+            {noti.noti} <span>{noti.item}</span>
           </p>
-          <span className="ml-auto">{noti.date}</span>
+          <span>{noti.date}</span>
         </button>
       ))}
     </motion.div>

@@ -4,6 +4,7 @@ import Heart from "../svg/heart.svg";
 import Play from "../svg/play";
 import React from "react";
 import getDuration from "../components/duration";
+import "./Song.css"
 import { useParams } from "react-router-dom";
 import { useUserStore } from "../store/useUserData";
 
@@ -25,18 +26,18 @@ export default function Songs() {
   }, [params.id]);
   const updateSong = useUserStore((store) => store.setSongData);
   return (
-    <div className="w-full h-[100vh] flex flex-col gap-6 py-10 px-10 bg-white overflow-y-auto text-black">
-      <p className="font-semibold text-lg">
+    <div className="song-container">
+      <p>
         {loading ? "" : songs[0].strAlbum}
       </p>
-      <div className="w-full flex flex-col gap-5">
+      <div className="songs-wrapper">
         {loading
           ? new Array(10)
               .fill(0)
               .map((x, index) => (
                 <div
                   key={x + index}
-                  className="w-full h-10 bg-gray-100 animate-pulse"
+                  className="loader"
                 />
               ))
           : songs.map((song) => (
@@ -49,34 +50,32 @@ export default function Songs() {
                     songName: song.strTrack,
                   })
                 }
-                className="song flex gap-4 items-center hover:bg-gray-100 duration-300 text-[10px]"
+                className="song"
               >
-                <div className="song-hover size-10 relative">
+                <div className="song-hover">
                   <img
                     src={
                       "https://www.theaudiodb.com/images/media/album/thumb/house-of-balloons-4ee693d4138bb.jpg"
                     }
-                    className="size-full bg-black"
                   />
-                  <div className="size-full absolute top-0 left-0 bg-black/60">
+                  <div className="play">
                     <Play stroke="#fff" />
                   </div>
                 </div>
-                <div className="w-full flex justify-between">
-                  <p className="w-24 overflow-hidden font-bold text-ellipsis text-left">
+                <div className="track-info">
+                  <p className="track">
                     {song.strTrack}
                   </p>
-                  <p className="w-16 overflow-hidden text-ellipsis text-left">
+                  <p className="artist">
                     {song.strArtist}
                   </p>
-                  <p className="text-left">{getDuration(song.intDuration)}</p>
-                  <p>
+                  <p>{getDuration(song.intDuration)}</p>
+                  <p className="heart">
                     <img
-                      className="size-3"
                       src={Number(song.intLoved) ? HeartFill : Heart}
                     />
                   </p>
-                  <p>
+                  <p className="menu">
                     <img className="size-3" src={Menu} />
                   </p>
                 </div>

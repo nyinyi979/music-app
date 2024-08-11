@@ -13,7 +13,8 @@
   width: 800px;
   height: 300px;
   background-color: gray;
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 .playlist {
   display: flex;
@@ -31,7 +32,8 @@
   height: 300px;
 }
 .playlist img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;

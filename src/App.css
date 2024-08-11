@@ -43,7 +43,8 @@
   width: 100%;
   height: 16px;
   background-color: gray;
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 .playlist-link {
   display: flex;
@@ -79,12 +80,24 @@
   padding: 0.75rem;
   flex-direction: column;
   gap: 0.75rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   font-weight: 600;
   font-size: 10px;
   background-color: #ffffff;
   width: 160px;
   color: 10px;
+}
+
+@-webkit-keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 
 @keyframes pulse {
@@ -105,6 +118,8 @@
   padding-bottom: 1.25rem;
   gap: 1.25rem;
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   color: #ffffff;
 }
