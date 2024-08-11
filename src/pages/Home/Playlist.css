@@ -36,16 +36,24 @@
 @media screen and (min-width: 768px) {
   .playlists-container {
     width: 600px;
+    height: 400px;
   }
 }
 @media screen and (min-width: 1000px) {
   .playlists-container {
     width: 800px;
+    height: 400px;
   }
 }
 @media screen and (min-width: 1200px) {
   .playlists-container {
     width: 1000px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .playlists-container {
+    width: 1150px;
     height: 400px;
   }
 }

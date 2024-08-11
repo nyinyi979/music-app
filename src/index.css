@@ -17,9 +17,17 @@ body {
   gap: 0;
   width: 100%;
   background-color: #ffffff;
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow-y: auto;
 }
-.home-sub{
+@media screen and (min-width: 768px) {
+  .home {
+    height: 100vh;
+  }
+}
+.home-sub {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
@@ -27,9 +35,9 @@ body {
   padding: 0 20px;
 }
 @media screen and (min-width: 768px) {
-  .home-sub{
+  .home-sub {
     grid-template-columns: 1fr 1fr;
-    gap:10px;
+    gap: 10px;
   }
 }
 .song {
