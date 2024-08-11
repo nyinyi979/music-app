@@ -22,9 +22,15 @@ body {
 .home-sub{
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: 1fr;
+  gap: 20px;
   padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  .home-sub{
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+  }
 }
 .song {
   width: 100%;

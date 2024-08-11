@@ -50,12 +50,15 @@
   display: flex;
   flex-direction: column;
   gap: 2px;
+  width: 100%;
 }
 .recommend .track-info .track {
   font-weight: normal;
   font-size: 14px;
+  width: 100%;
 }
 .recommend .track-info .artist {
   font-weight: lighter;
   font-size: 12px;
+  width: 100%;
 }

@@ -64,9 +64,9 @@ export default function Player() {
             <img src={Loop} alt="loop" />
           </button>
         </div>
-        <div className="flex duration">
+        <div className="flex playbar-con">
           <span>{getDuration(currentTime)}</span>
-          <div className="w-[500px] flex items-center">
+          <div className="playbar">
             <Slider value={played} onValueChange={setPlayed} />
           </div>
           <span>{totalTime.current}</span>
